@@ -2,7 +2,7 @@
 
 ## Part 1. Foundations of Deep Generative Models
 
-### Generative Adversarial Networks [paper](https://arxiv.org/pdf/1406.2661)
+### Generative Adversarial Networks [:page_facing_up:](https://arxiv.org/pdf/1406.2661)
 
 #### Summary
 
@@ -13,15 +13,15 @@
 - discriminative model: estimates the probability that a sample came from the training data or G
 - In the
 
-### Auto-Encoding Variational Bayes [paper](https://arxiv.org/pdf/1312.6114)
+### Auto-Encoding Variational Bayes [:page_facing_up:](https://arxiv.org/pdf/1312.6114)
 
 ## Part 2. Foundations of Transformer Architectures
 
-### Attention Is All You Need [paper](https://arxiv.org/pdf/1706.03762)
-### An Image is Worth 16x16 Words [paper](https://arxiv.org/pdf/2010.11929)
-### Learning Transferable Visual Models From Natural Language Supervision [paper](https://arxiv.org/pdf/2103.00020)
-### DINOv2: Learning Robust Visual Features without Supervision [paper](https://arxiv.org/pdf/2304.07193)
-### Sigmoid Loss for Language Image Pre-Training [paper](https://arxiv.org/pdf/2303.15343)
+### Attention Is All You Need [:page_facing_up:](https://arxiv.org/pdf/1706.03762)
+### An Image is Worth 16x16 Words [:page_facing_up:](https://arxiv.org/pdf/2010.11929)
+### Learning Transferable Visual Models From Natural Language Supervision [:page_facing_up:](https://arxiv.org/pdf/2103.00020)
+### DINOv2: Learning Robust Visual Features without Supervision [:page_facing_up:](https://arxiv.org/pdf/2304.07193)
+### Sigmoid Loss for Language Image Pre-Training [:page_facing_up:](https://arxiv.org/pdf/2303.15343)
 
 ## Part 3. Diffusion Probabilistic Models
 

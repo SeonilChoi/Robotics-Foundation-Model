@@ -36,7 +36,7 @@
 
 ### Diffusion Policy: Visuomotor Policy Learning via Action Diffusion [:page_facing_up:](https://arxiv.org/pdf/2303.04137)
 ### Diffusion Models for Robotic Manipulation: A Survey [:page_facing_up:](https://arxiv.org/pdf/2504.08438)
-### Latent Diffusion Policy: Shaping Latent Spaces for Diffusion-Based Robotic Manipulation [pa:page_facing_up:per](https://arxiv.org/pdf/2606.08657)
+### Latent Diffusion Policy: Shaping Latent Spaces for Diffusion-Based Robotic Manipulation [:page_facing_up:](https://arxiv.org/pdf/2606.08657)
 ### RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation [:page_facing_up:](https://arxiv.org/pdf/2410.07864)
 ### Octo: An Open-Source Generalist Robot Policy [:page_facing_up:](https://arxiv.org/pdf/2405.12213)
 

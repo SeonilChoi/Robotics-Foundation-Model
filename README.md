@@ -3,16 +3,6 @@
 ## Part 1. Foundations of Deep Generative Models
 
 ### Generative Adversarial Networks [:page_facing_up:](https://arxiv.org/pdf/1406.2661)
-
-#### Summary
-
-#### My Notes
-
-- adversarial process -> simultaneously train two models: a generative model and discriminative model
-- generative model: captures the data distribution -> maximize the probability of D making a mistake
-- discriminative model: estimates the probability that a sample came from the training data or G
-- In the
-
 ### Auto-Encoding Variational Bayes [:page_facing_up:](https://arxiv.org/pdf/1312.6114)
 
 ## Part 2. Foundations of Transformer Architectures

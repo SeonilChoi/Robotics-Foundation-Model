@@ -6,9 +6,8 @@
 
 #### - Unrolled approximate inference networks
 
-    An approximate inference network learns an approximate $q(z|x)$ of the true posterior $p(z|x)$.
-
-    An unrolled approximate inference network obtains this approximation through multiple iterative inference steps instead of single forward pass.
+- An approximate inference network learns an approximate $q(z|x)$ of the true posterior $p(z|x)$.
+- An unrolled approximate inference network obtains this approximation through multiple iterative inference steps instead of single forward pass.
 
 
 ### Auto-Encoding Variational Bayes [:page_facing_up:](https://arxiv.org/pdf/1312.6114)

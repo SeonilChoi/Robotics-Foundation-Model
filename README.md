@@ -9,6 +9,10 @@
 - An approximate inference network learns an approximate $q(z|x)$ of the true posterior $p(z|x)$.
 - An unrolled approximate inference network obtains this approximation through multiple iterative inference steps instead of single forward pass.
 
+#### - Undirected graphical models with latent variables
+
+- An undirected graphical model defines the relationship between the latent variable $z$ and the observed variable $x$ using an energy function rather than a directed conditional probability.
+
 
 ### Auto-Encoding Variational Bayes [:page_facing_up:](https://arxiv.org/pdf/1312.6114)
 

@@ -4,7 +4,7 @@
 
 ### Generative Adversarial Networks [:page_facing_up:](https://arxiv.org/pdf/1406.2661)
 
-#### Unrolled approximate inference networks
+#### - Unrolled approximate inference networks
 
 An approximate inference network learns an approximate $q(z|x)$ of the true posterior $p(z|x)$.
 

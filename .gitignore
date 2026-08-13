@@ -2,3 +2,4 @@ __pycache__/**
 
 logs/gan/**/samples/
 logs/gan/**/models/
+logs/gan/**/tensorboard/

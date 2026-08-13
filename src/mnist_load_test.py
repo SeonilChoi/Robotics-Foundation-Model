@@ -2,8 +2,8 @@ import torch
 import torch.utils.data as data
 import matplotlib.pyplot as plt
 
-from utils.dataset.dataset_loader import MnistDatasetLoader
-from utils.dataset.dataset import Dataset
+from utils.dataset import MnistDatasetLoader
+from utils.dataset import Dataset
 
 dataset_loader = MnistDatasetLoader(images_file_path="assets/dataset/mnist-dataset/train-images.idx3-ubyte",
                                    labels_file_path="assets/dataset/mnist-dataset/train-labels.idx1-ubyte")

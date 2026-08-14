@@ -1,6 +1,8 @@
+import argparse
+
 from utils.experiments import GANExperiment
 
-def main():
+def main(logdir):
     generator_kwargs = {
         "latent_dim": 100,
         "hidden_dims": [128],
@@ -17,8 +19,11 @@ def main():
         "betas": (0.5, 0.999),
     }
     experiment = GANExperiment(generator_kwargs, discriminator_kwargs, "cuda", optimizer_kwargs, 16)
-    experiment.test(20, 4, "logs/gan/20260813_170739")
+    experiment.test(20, 4, logdir)
 
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--logdir", type=str, default="logs/gan/20260814_105012")
+    args = parser.parse_args()
+    main(args.logdir)

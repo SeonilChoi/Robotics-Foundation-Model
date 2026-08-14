@@ -2,7 +2,9 @@
 
 ## Part 1. Foundations of Deep Generative Models
 
-![GAN banner](logs/gan/20260814_105012/test/result.png)
+### Generative Adversarial Networks [:page_facing_up:](https://arxiv.org/pdf/1406.2661)
+
+<img src="logs/gan/20260814_105012/test/result.png" alt="GAN banner" width="300">
 
 #### - Unrolled approximate inference networks
 

@@ -29,7 +29,15 @@ L(\theta, \phi ; x^{(i)}) = E_{q_{\phi}(z|x)}[-\log q_{\phi}(z|x) + \log p_{\the
 $$
 
 $$
-= E_{q_{\phi}(z|x)}[-\log \frac{q_{\phi}(z|x)}{q_{\phi}(z)} + \log p_{\theta}(x)]
+= E_{q_{\phi}(z|x)}[-\log \frac{q_{\phi}(z|x)}{p_{\theta}(z)} + \log p_{\theta}(x | z)]
+$$
+
+$$
+= - \int q_{\phi}(z|x) \log \frac{q_{\phi}(z|x)}{p_{\theta}(z)} + E_{q_{\phi}(z|x)}[\log p_{\theta}(x | z)]
+$$
+
+$$
+= - D_{KL}(q_{\phi}(z|x)|p_{\theta}(z)) + E_{q_{\phi}(z|x)}[\log p_{\theta}(x | z)]
 $$
 
 ## Part 2. Foundations of Transformer Architectures

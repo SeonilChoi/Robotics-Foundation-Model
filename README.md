@@ -22,6 +22,9 @@
 
 $$
 \log p_{\theta}(x^{(i)}) = D_{KL}(q_{\phi}(z|x^{(i)})|p_{\theta}(z|x^{(i)})) + L(\theta, \phi ; x^{(i)})
+L(\theta, \phi ; x^{(i)}) = E_{q_{\phi}(z|x)}[-\log q_{\phi}(z|x) + \log p_{\theta}(x, z)]
+= E_{q_{\phi}(z|x)}[- \frac{\log q_{\phi}(z|x)}{q_{\phi}(z)} + \log p_{\theta}(x)]
+=
 $$
 
 ## Part 2. Foundations of Transformer Architectures

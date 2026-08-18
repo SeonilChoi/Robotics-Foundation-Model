@@ -18,9 +18,9 @@
 
 ### Auto-Encoding Variational Bayes (2013) [:page_facing_up:](https://arxiv.org/pdf/1312.6114)
 
-Eq (2)
+#### Equtation 1.
 
-$\log p_{\theta}(x^{(i)})$
+$\log p_{\theta}(x^{(i)}) = D_{KL}(q_{\phi}(z|x^{(i)})||p_{\theta}(z|x^{(i)})) + L(\theta, \phi ; x^{(i)})$
 
 ## Part 2. Foundations of Transformer Architectures
 

@@ -2,7 +2,7 @@
 
 ## Part 1. Foundations of Deep Generative Models
 
-### Generative Adversarial Networks [:page_facing_up:](https://arxiv.org/pdf/1406.2661)
+### Generative Adversarial Networks (2014) [:page_facing_up:](https://arxiv.org/pdf/1406.2661)
 
 <img src="logs/gan/20260814_105012/test/result.png" alt="GAN banner" width="300">
 
@@ -16,7 +16,7 @@
 - An undirected graphical model defines the relationship between the latent variable $z$ and the observed variable $x$ using an energy function rather than a directed conditional probability.
 
 
-### Auto-Encoding Variational Bayes [:page_facing_up:](https://arxiv.org/pdf/1312.6114)
+### Auto-Encoding Variational Bayes (2013) [:page_facing_up:](https://arxiv.org/pdf/1312.6114)
 
 ## Part 2. Foundations of Transformer Architectures
 

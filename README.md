@@ -21,7 +21,7 @@
 #### Equtation 1.
 
 $$
-\log p_{\theta}(x^{(i)}) = D_{KL}(q_{\phi}(z|x^{(i)}) || p_{\theta}(z|x^{(i)})) + L(\theta, \phi ; x^{(i)})
+\log p_{\theta}(x^{(i)}) = D_{KL}(q_{\phi}(z|x^{(i)}) \!\|\! p_{\theta}(z|x^{(i)})) + L(\theta, \phi ; x^{(i)})
 $$
 
 ## Part 2. Foundations of Transformer Architectures

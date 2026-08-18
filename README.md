@@ -18,6 +18,14 @@
 
 ### Auto-Encoding Variational Bayes (2013) [:page_facing_up:](https://arxiv.org/pdf/1312.6114)
 
+#### - Mean-field variational inference
+
+- An approach to variational inference that approximates the posterior by assuming that the latent variables are independent.
+
+$$
+q(z_{1}, ... , z_{K}) = \prob_{j=1}^{K} q_{j}(z_{j})
+$$
+
 #### Equtation 1.
 
 $$

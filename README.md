@@ -26,7 +26,7 @@ $$
 q(z_{1}, ... , z_{K}) = \prod_{j=1}^{K} q_{j}(z_{j})
 $$
 
-#### Equtation 1.
+#### - Derivation of Equtations (1), (2), and (3)
 
 $$
 \log p_{\theta}(x^{(i)}) = D_{KL}(q_{\phi}(z|x^{(i)})|p_{\theta}(z|x^{(i)})) + L(\theta, \phi ; x^{(i)})

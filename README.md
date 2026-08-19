@@ -23,7 +23,7 @@
 
 - An approach to variational inference that approximates the posterior by assuming that the latent variables are independent.
 
-![](https://latex.codecogs.com/svg.image?q(z_1,...,z_K)=\prod_{j=1}^{K}q_j(z_j))
+  ![](https://latex.codecogs.com/svg.image?q(z_1,...,z_K)=\prod_{j=1}^{K}q_j(z_j))
 
 #### - Derivation of Equtations (1), (2), and (3)
 

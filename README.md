@@ -13,7 +13,7 @@
 
 #### - Undirected graphical models with latent variables
 
-- An undirected graphical model defines the relationship between the latent variable $z$ and the observed variable $x$ using an energy function rather than a directed conditional probability.
+- An undirected graphical model defines the relationship between the latent variable ![](https://latex.codecogs.com/svg.image?z) and the observed variable ![](https://latex.codecogs.com/svg.image?x) using an energy function rather than a directed conditional probability.
 
 ### Auto-Encoding Variational Bayes (2013) [:page_facing_up:](https://arxiv.org/pdf/1312.6114)
 

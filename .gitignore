@@ -3,3 +3,7 @@ __pycache__/**
 logs/gan/**/samples/
 logs/gan/**/models/
 logs/gan/**/tensorboard/
+
+logs/vae/**/samples/
+logs/vae/**/models/
+logs/vae/**/tensorboard/

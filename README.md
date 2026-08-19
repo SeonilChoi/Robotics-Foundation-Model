@@ -27,23 +27,15 @@
 
 #### - Derivation of Equtations (1), (2), and (3)
 
-![](https://latex.codecogs.com/svg.image?log&space;p_{\theta}(x^{(i)})=D_{KL}(q_{\phi}(z|x^{(i)})||p_{\theta}(z|x^{(i)}))&plus;\mathfrak{L}(\theta,\phi;x^{(i)}))
+![](https://latex.codecogs.com/svg.image?\log&space;p_{\theta}(x^{(i)})=D_{KL}(q_{\phi}(z|x^{(i)})||p_{\theta}(z|x^{(i)}))&plus;\mathfrak{L}(\theta,\phi;x^{(i)}))
 
-$$
-L(\theta, \phi ; x^{(i)}) = E_{q_{\phi}(z|x)}[-\log q_{\phi}(z|x) + \log p_{\theta}(x, z)]
-$$
+![](https://latex.codecogs.com/svg.image?\mathfrak{L}(\theta,\phi;x^{(i)})=E_{q_{\phi}(z|x)}[-\log&space;q_{\phi}(z|x)&plus;\log&space;p_{\theta}(x,z)])
 
-$$
-= E_{q_{\phi}(z|x)}[-\log \frac{q_{\phi}(z|x)}{p_{\theta}(z)} + \log p_{\theta}(x | z)]
-$$
+![](https://latex.codecogs.com/svg.image?=\mathbb{E}_{q_{\phi}(z|x)}[-\log&space;\frac{q_{\phi}(z|x)}{p_{\theta}(z)}&plus;\log&space;p_{\theta}(x&space;|&space;z)])
 
-$$
-= - \int q_{\phi}(z|x) \log \frac{q_{\phi}(z|x)}{p_{\theta}(z)} + E_{q_{\phi}(z|x)}[\log p_{\theta}(x | z)]
-$$
+![](https://latex.codecogs.com/svg.image?=-\int&space;q_{\phi}(z|x)\log&space;\frac{q_{\phi}(z|x)}{p_{\theta}(z)}&plus;\mathbb{E}_{q_{\phi}(z|x)}[\log&space;p_{\theta}(x&space;|&space;z)])
 
-$$
-= - D_{KL}(q_{\phi}(z|x)|p_{\theta}(z)) + E_{q_{\phi}(z|x)}[\log p_{\theta}(x | z)]
-$$
+![](https://latex.codecogs.com/svg.image?=-D_{KL}(q_{\phi}(z|x)||p_{\theta}(z))&plus;\mathbb{E}_{q_{\phi}(z|x)}[\log&space;p_{\theta}(x&space;|&space;z)])
 
 ## Part 2. Foundations of Transformer Architectures
 

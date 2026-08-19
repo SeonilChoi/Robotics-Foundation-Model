@@ -1,7 +1,5 @@
 import os
 import datetime
-import numpy as np
-import matplotlib.pyplot as plt
 from typing import Any
 
 import torch
@@ -11,43 +9,13 @@ import torch.utils.data as data
 import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 
-from utils import get_device
+from utils import get_device, get_activation_fn
+from utils import save_images, logging_progress
 from utils.models import Generator, Discriminator
 from utils.dataset import MnistDatasetLoader, Dataset
 
 
-def get_activation_fn(name: str) -> type[nn.Module]:
-    activation_functions = {
-        'relu': nn.ReLU,
-        'leaky_relu': nn.LeakyReLU,
-        'tanh': nn.Tanh,
-        'sigmoid': nn.Sigmoid,
-    }
-    return activation_functions[name]
-
-def save_images(images: torch.Tensor, row:int, col:int, path: str, epoch: int):
-    fig = plt.figure()
-    for i in range(row * col):
-        ax = fig.add_subplot(row, col, i+1)
-        ax.imshow(images[i], cmap='gray')
-        ax.axis('off')
-    fig.subplots_adjust(wspace=0.1, hspace=0.1)
-    fig.suptitle(f"Epoch {epoch}")
-    fig.savefig(path)
-    plt.close(fig)
-
-def progress_learning(epoch: int, i: int, total_batches: int, progress_length: int=20, print_str=''):
-    current = i + 1
-    percent = round(current / total_batches * 100)
-    curr_bar = int(current / total_batches * progress_length)
-
-    bar = '*' * curr_bar + ' ' * (progress_length - curr_bar)
-    end_char = '\n' if current == total_batches else '\r'
-
-    print(f'Epoch {epoch}\t {percent:3d}% [{bar}] {print_str}', end=end_char, flush=True)
-
-
-class GANExperiment:
+class GanExperiment:
     def __init__(
         self,
         g_kwargs: dict[str, Any],
@@ -71,7 +39,6 @@ class GANExperiment:
         self.g_optimizer = optim.Adam(self.generator.parameters(), **optimizer_kwargs)
         self.d_optimizer = optim.Adam(self.discriminator.parameters(), **optimizer_kwargs)
 
-        
         dataset_loader = MnistDatasetLoader(images_file_path="assets/dataset/mnist-dataset/train-images.idx3-ubyte",
                                             labels_file_path="assets/dataset/mnist-dataset/train-labels.idx1-ubyte")
         dataset = Dataset(dataset_loader)

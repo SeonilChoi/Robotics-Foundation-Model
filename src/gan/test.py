@@ -1,6 +1,6 @@
 import argparse
 
-from utils.experiments import GANExperiment
+from utils.experiments import GanExperiment
 
 def main(logdir):
     generator_kwargs = {
@@ -18,7 +18,7 @@ def main(logdir):
         "lr": 0.0001,
         "betas": (0.5, 0.999),
     }
-    experiment = GANExperiment(generator_kwargs, discriminator_kwargs, "cuda", optimizer_kwargs, 16)
+    experiment = GanExperiment(generator_kwargs, discriminator_kwargs, "cuda", optimizer_kwargs, 16)
     experiment.test(20, 4, logdir)
 
 

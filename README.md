@@ -15,8 +15,9 @@
 
 - An undirected graphical model defines the relationship between the latent variable $z$ and the observed variable $x$ using an energy function rather than a directed conditional probability.
 
-
 ### Auto-Encoding Variational Bayes (2013) [:page_facing_up:](https://arxiv.org/pdf/1312.6114)
+
+<img src="logs/vae/20260819_155507/test/result_100.png" alt="VAE banner" width="300">
 
 #### - Mean-field variational inference
 

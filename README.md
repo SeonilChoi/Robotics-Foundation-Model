@@ -8,7 +8,7 @@
 
 #### - Unrolled approximate inference networks
 
-- An approximate inference network learns an approximate ![](https://latex.codecogs.com/svg.image?&space;q(z|x)) of the true posterior $p(z|x)$.
+- An approximate inference network learns an approximate ![](https://latex.codecogs.com/svg.image?&space;q(z|x)) of the true posterior ![](https://latex.codecogs.com/svg.image?&space;p(x|z)).
 - An unrolled approximate inference network obtains this approximation through multiple iterative inference steps instead of single forward pass.
 
 #### - Undirected graphical models with latent variables

@@ -27,9 +27,7 @@
 
 #### - Derivation of Equtations (1), (2), and (3)
 
-$$
-\log p_{\theta}(x^{(i)}) = D_{KL}(q_{\phi}(z|x^{(i)})|p_{\theta}(z|x^{(i)})) + L(\theta, \phi ; x^{(i)})
-$$
+![](https://latex.codecogs.com/svg.image?log&space;p_{\theta}(x^{(i)})=D_{KL}(q_{\phi}(z|x^{(i)})||p_{\theta}(z|x^{(i)}))&plus;\mathfrak{L}(\theta,\phi;x^{(i)}))
 
 $$
 L(\theta, \phi ; x^{(i)}) = E_{q_{\phi}(z|x)}[-\log q_{\phi}(z|x) + \log p_{\theta}(x, z)]

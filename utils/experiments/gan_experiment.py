@@ -1,5 +1,6 @@
 import os
 import datetime
+import numpy as np
 from typing import Any
 
 import torch
@@ -10,7 +11,7 @@ import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 
 from utils import get_device, get_activation_fn
-from utils import save_images, logging_progress
+from utils import logging_progress, save_progress_image, save_gan_test_image
 from utils.models import Generator, Discriminator
 from utils.dataset import MnistDatasetLoader, Dataset
 
@@ -90,7 +91,7 @@ class GanExperiment:
                     self.g_optimizer.step()
                     generator_update_steps = 0
                 
-                progress_learning(epoch, steps, total_batches=total_batches, print_str=f"D Loss: {d_loss.item():.4f} G Loss: {g_loss.item():.4f}")
+                logging_progress(epoch, steps, total_batches=total_batches, print_str=f"D Loss: {d_loss.item():.4f} G Loss: {g_loss.item():.4f}")
                 generator_update_steps += 1
                 steps += 1
 
@@ -109,7 +110,7 @@ class GanExperiment:
                 writer.add_image("Generated Images", test_img_grids, epoch*total_batches + steps)
 
                 test_images_numpy = (test_images.squeeze(1).mul(255).byte().numpy().reshape(self.batch_size, 28, 28))
-                save_images(test_images_numpy, 4, 4, f"logs/gan/{timestamp}/samples/epoch_{epoch+1}.png", epoch+1)
+                save_progress_image(test_images_numpy, 4, 4, f"logs/gan/{timestamp}/samples/epoch_{epoch+1}.png", epoch+1)
 
             torch.save(self.generator.state_dict(), f"logs/gan/{timestamp}/models/generator_epoch_{epoch+1}.pth")
             torch.save(self.discriminator.state_dict(), f"logs/gan/{timestamp}/models/discriminator_epoch_{epoch+1}.pth")
@@ -124,8 +125,8 @@ class GanExperiment:
 
         images_array = np.zeros((4, n_col, 28, 28))
         for i in range(n_col):
-            epoch = i * stride + 1
-            model_path = os.path.join(path, f"models/generator_epoch_{epoch+1}.pth")
+            epoch = (i + 1) * stride
+            model_path = os.path.join(path, f"models/generator_epoch_{epoch}.pth")
             assert os.path.exists(model_path)
             self.generator.load_state_dict(torch.load(model_path, map_location=self.device))
 
@@ -136,6 +137,6 @@ class GanExperiment:
             images_numpy = (images.squeeze(1).mul(255).byte().numpy().reshape(4, 28, 28))
             images_array[:, i] = images_numpy
 
-        save_images(images_array.reshape(4 * n_col, 28, 28), 4, n_col, f"{path}/test/result.png", epochs)
+        save_gan_test_image(images_array.reshape(4 * n_col, 28, 28), 4, n_col, f"{path}/test/result.png", epochs)
 
         

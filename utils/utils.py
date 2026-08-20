@@ -24,3 +24,5 @@ def get_activation_fn(name: str) -> type[nn.Module]:
         'sigmoid': nn.Sigmoid,
     }
     return activation_functions[name]
+
+

@@ -11,7 +11,7 @@ import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 
 from utils import get_device, get_activation_fn
-from utils.logging import save_images, logging_progress
+from utils.logging import logging_progress, save_progress_image, save_vae_test_image
 from utils.models import VariationalAutoEncoder
 from utils.dataset import MnistDatasetLoader, Dataset
 
@@ -91,7 +91,7 @@ class VaeExperiment:
                 writer.add_image("Generated Images", test_img_grids, epoch*total_batches + steps)
 
                 test_images_numpy = (test_images.squeeze(1).mul(255).byte().numpy().reshape(self.batch_size, 28, 28))
-                save_images(test_images_numpy, 4, 4, f"logs/vae/{timestamp}/samples/epoch_{epoch+1}.png", epoch+1)
+                save_progress_image(test_images_numpy, 4, 4, f"logs/vae/{timestamp}/samples/epoch_{epoch+1}.png", epoch+1)
 
             torch.save(self.vae.state_dict(), f"logs/vae/{timestamp}/models/vae_epoch_{epoch+1}.pth")
             writer.close()
@@ -122,4 +122,4 @@ class VaeExperiment:
                 images_numpy = (images.squeeze(1).mul(255).byte().numpy().reshape(self.batch_size, 28, 28))
                 images_array[i, j] = images_numpy[0]
 
-        save_images(images_array.reshape(length*length, 28, 28), length, length, f"{path}/test/result_{epochs}.png", epochs)
+        save_vae_test_image(images_array.reshape(length*length, 28, 28), length, length, f"{path}/test/result_{epochs}.png", epochs)

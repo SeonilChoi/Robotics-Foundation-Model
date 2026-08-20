@@ -122,4 +122,4 @@ class VaeExperiment:
                 images_numpy = (images.squeeze(1).mul(255).byte().numpy().reshape(self.batch_size, 28, 28))
                 images_array[i, j] = images_numpy[0]
 
-        save_vae_test_image(images_array.reshape(length*length, 28, 28), length, length, f"{path}/test/result_{epochs}.png", epochs)
+        save_vae_test_image(images_array.reshape(length*length, 28, 28), length, length, f"{path}/test/result.png", epochs)

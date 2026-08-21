@@ -25,7 +25,7 @@
 
   ![](https://latex.codecogs.com/svg.image?q(z_1,...,z_K)=\prod_{j=1}^{K}q_j(z_j))
 
-#### - Derivation of Equtations (1), (2), and (3)
+#### - Derivation of Equations (1), (2), and (3)
 
   ![](https://latex.codecogs.com/svg.image?\log&space;p_{\theta}(x^{(i)})=D_{KL}(q_{\phi}(z|x^{(i)})||p_{\theta}(z|x^{(i)}))&plus;\mathfrak{L}(\theta,\phi;x^{(i)}))
 
@@ -47,7 +47,16 @@
 
 ## Part 3. Diffusion Probabilistic Models
 
-### Deep Unsupervised Learning using Nonequilibrium Thermodynamics [:page_facing_up:](https://arxiv.org/pdf/1503.03585)
+### Deep Unsupervised Learning using Nonequilibrium Thermodynamics (2015) [:page_facing_up:](https://arxiv.org/pdf/1503.03585)
+
+#### Meaning if Equation. (1)
+
+  ![](https://latex.codecogs.com/svg.image?&space;\pi(y)=\int&space;dy'&space;T_{\pi}(y|y';\beta)\pi(y')) : ![](https://latex.codecogs.com/svg.image?\pi(y)) is the stationary distribution of the Markov diffusion kernel ![](https://latex.codecogs.com/svg.image?\T_{\pi})
+
+  - ![](https://latex.codecogs.com/svg.image?T_{\pi}(y|y';\beta)) : Markov diffusion kernel (Markov transition kernel)
+  - ![](https://latex.codecogs.com/svg.image?\pi(y)) : Stationary distribution of ![](https://latex.codecogs.com/svg.image?T_{\pi})
+  - ![](https://latex.codecogs.com/svg.image?\beta) : diffusion rate
+
 ### Denoising Diffusion Probabilistic Models [:page_facing_up:](https://arxiv.org/pdf/2006.11239)
 ### Score-Based Generative Modeling through Stochastic Differential Equations [:page_facing_up:](https://arxiv.org/pdf/2011.13456)
 ### High-Resolution Image Synthesis with Latent Diffusion Models [:page_facing_up:](https://arxiv.org/pdf/2112.10752)

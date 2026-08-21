@@ -49,7 +49,7 @@
 
 ### Deep Unsupervised Learning using Nonequilibrium Thermodynamics (2015) [:page_facing_up:](https://arxiv.org/pdf/1503.03585)
 
-#### Meaning if Equation. (1)
+#### Meaning of Equation. (1)
 
   ![](https://latex.codecogs.com/svg.image?&space;\pi(y)=\int&space;dy'&space;T_{\pi}(y|y';\beta)\pi(y')) : ![](https://latex.codecogs.com/svg.image?\pi(y)) is the stationary distribution of the Markov diffusion kernel ![](https://latex.codecogs.com/svg.image?T_{\pi}) .
 

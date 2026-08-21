@@ -51,7 +51,7 @@
 
 #### Meaning if Equation. (1)
 
-  ![](https://latex.codecogs.com/svg.image?&space;\pi(y)=\int&space;dy'&space;T_{\pi}(y|y';\beta)\pi(y')) : ![](https://latex.codecogs.com/svg.image?\pi(y)) is the stationary distribution of the Markov diffusion kernel ![](https://latex.codecogs.com/svg.image?\T_{\pi}) .
+  ![](https://latex.codecogs.com/svg.image?&space;\pi(y)=\int&space;dy'&space;T_{\pi}(y|y';\beta)\pi(y')) : ![](https://latex.codecogs.com/svg.image?\pi(y)) is the stationary distribution of the Markov diffusion kernel ![](https://latex.codecogs.com/svg.image?T_{\pi}) .
 
   - ![](https://latex.codecogs.com/svg.image?T_{\pi}(y|y';\beta)) : Markov diffusion kernel (Markov transition kernel)
   - ![](https://latex.codecogs.com/svg.image?\pi(y)) : Stationary distribution of ![](https://latex.codecogs.com/svg.image?T_{\pi})

@@ -57,6 +57,13 @@
   - ![](https://latex.codecogs.com/svg.image?\pi(y)) : Stationary distribution of ![](https://latex.codecogs.com/svg.image?T_{\pi})
   - ![](https://latex.codecogs.com/svg.image?\beta) : diffusion rate
 
+#### Derivation of Equations (11), (12)
+
+  ![](https://latex.codecogs.com/svg.image?&space;\mathfrak{L}=\int&space;dx^{(0)}q(x^{(0)})\cdot&space;\log&space;\begin{bmatrix}\int&space;dx^{(1...T)}q(x^{(1...T)}|x^{(0)})\cdot&space;p(x^{(T)})\prod_{t=1}^{T}\frac{p(x^{(t-1)}|x^{(t)})}{q(x^{(t)}|x^{(t-1)})}\end{bmatrix})
+  ![](https://latex.codecogs.com/svg.image?\geq&space;&space;\int&space;dx^{(0)}q(x^{(0)})\cdot&space;\int&space;dx^{(1...T)}q(x^{(1...T)}|x^{(0)})\log&space;\begin{bmatrix}p(x^{(T)})\prod_{t=1}^{T}\frac{p(x^{(t-1)}|x^{(t)})}{q(x^{(t)}|x^{(t-1)})}\end{bmatrix})
+  ![](https://latex.codecogs.com/svg.image?=\int&space;dx^{(0...T)}q(x^{(0...T)}|x^{(0)})\log&space;\begin{bmatrix}p(x^{(T)})\prod_{t=1}^{T}\frac{p(x^{(t-1)}|x^{(t)})}{q(x^{(t)}|x^{(t-1)})}\end{bmatrix})
+
+
 ### Denoising Diffusion Probabilistic Models [:page_facing_up:](https://arxiv.org/pdf/2006.11239)
 ### Score-Based Generative Modeling through Stochastic Differential Equations [:page_facing_up:](https://arxiv.org/pdf/2011.13456)
 ### High-Resolution Image Synthesis with Latent Diffusion Models [:page_facing_up:](https://arxiv.org/pdf/2112.10752)

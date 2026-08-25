@@ -47,7 +47,10 @@
 
 ## Part 3. Diffusion Probabilistic Models
 
-### Deep Unsupervised Learning using Nonequilibrium Thermodynamics [:page_facing_up:](https://arxiv.org/pdf/1503.03585)
+### Deep Unsupervised Learning using Nonequilibrium Thermodynamics (2015) [:page_facing_up:](https://arxiv.org/pdf/1503.03585)
+
+
+
 ### Denoising Diffusion Probabilistic Models [:page_facing_up:](https://arxiv.org/pdf/2006.11239)
 ### Score-Based Generative Modeling through Stochastic Differential Equations [:page_facing_up:](https://arxiv.org/pdf/2011.13456)
 ### High-Resolution Image Synthesis with Latent Diffusion Models [:page_facing_up:](https://arxiv.org/pdf/2112.10752)
